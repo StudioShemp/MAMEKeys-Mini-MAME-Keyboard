@@ -48,4 +48,4 @@ Media control<br>
  - System Volum Mute to A2<br>
 
 <BR>Wiring on the DFRobot Leonardo (Dreamer Nano)<BR>
-<img src=\"/assets/images/wiring.jpg\">
+![Wiring Diagram](https://github.com/StudioShemp/MAMEKeys-Mini-MAME-Keyboard/blob/main/images/wiring.jpg)
