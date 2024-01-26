@@ -53,7 +53,9 @@ Media control<br>
 ![Wiring Diagram](https://github.com/StudioShemp/MAMEKeys-Mini-MAME-Keyboard/blob/main/images/wiring.jpg)
 
 <BR>
+
 ---
+
 <BR>
 
 ![Panel](https://github.com/StudioShemp/MAMEKeys-Mini-MAME-Keyboard/blob/main/images/panel.jpg)
