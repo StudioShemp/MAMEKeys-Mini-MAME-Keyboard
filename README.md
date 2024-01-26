@@ -55,4 +55,6 @@ Media control<br>
 <BR>
 ---
 <BR>
+
 ![Panel](https://github.com/StudioShemp/MAMEKeys-Mini-MAME-Keyboard/blob/main/images/panel.jpg)
+<BR>
