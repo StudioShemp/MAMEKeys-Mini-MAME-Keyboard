@@ -1,17 +1,15 @@
 # MAMEKeys-Mini-MAME-Keyboard
-A mini keyboard for the default MAME cabinet keys
+A mini keyboard for the default MAME cabinet keys 
 
-provide the standard MAME (non-player control) keys to a cabinet. 
+This mini keyboard/HID controller provides the standard (non-player control) MAME keys for a cabinet and utilises NicoHood's excellent HID-Project library. 
 
-Ideal for cabinets with Zero Delay Controllers to maintain default key mappings within MAME. 
+It also includes keys for controlling the system (master) volume - Volume up, down and mute (tested on Win 10 and 11)
 
-Also includes Consumer keys for control of the system volume - up, down and mute
+Ideal for cabinets with Zero Delay Joystick Controllers, providing the critical remaining keys needed for a cabinet whilst maintaining the default key mappings within MAME. 
 
-Tested on an Arduino Leonardo clone (DFRobot Dremer Nano)
+I built this on an Arduino Leonardo clone (DFRobot Dreamer Nano). Other boards are compatible with the HID-Project library- see "Supported Arduinos" at https://github.com/NicoHood/HID. Pins/pin availability may vary between boards, so if you choose a different board you may need to edit the code. 
 
-#include "HID-Project.h"  //https://github.com/NicoHood/HID
-
-Provides the following MAME Key assignments :
+The keyboard provides the following MAME Key assignments :
 Coin 1 - 5 key
 Coin 2 - 6 key
 Player 1 Start - 1 key
