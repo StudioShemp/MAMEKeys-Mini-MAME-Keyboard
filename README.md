@@ -47,4 +47,5 @@ Media control<br>
  - System Volume Down to A1<br>
  - System Volum Mute to A2<br>
 
-
+<BR>Wiring on the DFRobot Leonardo (Dreamer Nano)<BR>
+!(images/wiring.jpg)
