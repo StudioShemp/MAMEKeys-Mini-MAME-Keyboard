@@ -1,5 +1,5 @@
 # MAMEKeys-Mini-MAME-Keyboard
-A mini keyboard for the default MAME cabinet keys 
+A mini USB keyboard for the default MAME cabinet keys 
 
 This mini keyboard/HID controller provides the standard (non-player control) MAME keys for a cabinet and utilises NicoHood's excellent HID-Project library. 
 
