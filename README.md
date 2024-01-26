@@ -7,7 +7,9 @@ It also includes keys for controlling the system (master) volume - Volume up, do
 
 Ideal for cabinets with Zero Delay Joystick Controllers, providing the critical remaining keys needed for a cabinet whilst maintaining the default key mappings within MAME. 
 
-I built this on an Arduino Leonardo clone (DFRobot Dreamer Nano). Other boards are compatible with the HID-Project library- see "Supported Arduinos" at https://github.com/NicoHood/HID. Pins/pin availability may vary between boards, so if you choose a different board you may need to edit the code. 
+I built this on an Arduino Leonardo clone (DFRobot Dreamer Nano). Other boards are compatible with the HID-Project library- see "Supported Arduinos" at https://github.com/NicoHood/HID. Pins/pin availability may vary between boards, so if you choose a different board you may need to edit the code. <br>
+
+![Wiring Diagram](https://github.com/StudioShemp/MAMEKeys-Mini-MAME-Keyboard/blob/main/images/nano.jpg)
 
 ---
 The keyboard provides the following MAME Key assignments :
@@ -49,3 +51,8 @@ Media control<br>
 
 <BR>Wiring on the DFRobot Leonardo (Dreamer Nano)<BR>
 ![Wiring Diagram](https://github.com/StudioShemp/MAMEKeys-Mini-MAME-Keyboard/blob/main/images/wiring.jpg)
+
+<BR>
+---
+<BR>
+![Panel](https://github.com/StudioShemp/MAMEKeys-Mini-MAME-Keyboard/blob/main/images/panel.jpg)
