@@ -80,8 +80,7 @@ void setup() {
   // for later expansion - Can be used for additional custom keys to a cabinet
   // pinMode(Unused0, INPUT_PULLUP);
   // pinMode(Unused1, INPUT_PULLUP);
-  // pinMode(Unused13, INPUT_PULLUP); //Optionally used to delay start of a
-  // second Zero Delay Joystick Encoder pinMode(UnusedA2, INPUT_PULLUP);
+  // pinMode(Unused13, INPUT_PULLUP); //Optionally used to delay start of a second Zero Delay Joystick Encoder pinMode(UnusedA2, INPUT_PULLUP);
   // pinMode(UnusedA3, INPUT_PULLUP);
 
 
