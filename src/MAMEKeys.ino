@@ -1,4 +1,4 @@
-// A mini keyboard HID device to provide the standard MAME (non-player control) keys to a cabinet. Ideal for cabinets with Zero Delay Controllers to maintain default key mappings within MAME. Also includes Consumer keys for control of the system volume.  
+// A mini keyboard HID device to provide standard MAME (non-player control) keys to a cabinet. Ideal for cabinets with Zero Delay Controllers to maintain default key mappings within MAME. Also includes Consumer keys for control of the system volume.  
 
 #include "HID-Project.h"  //https://github.com/NicoHood/HID
 
@@ -108,87 +108,86 @@ void setup() {
 void loop() {
   if ((digitalRead(Coin1) == LOW) && (Coin1Press == 0)) {
     Keyboard.press('5');
-	delay(ButtonRepeatDelay);
+    delay(ButtonRepeatDelay);
     Serial.println("Coin1");
-	Coin1Press = 1;
-	}
+    Coin1Press = 1;
+  }
 	
   if ((digitalRead(Coin1) == HIGH) && (Coin1Press == 1)) {	
     Keyboard.release('5');
-	Coin1Press = 0;
-
+    Coin1Press = 0;
   }
 
   if ((digitalRead(Coin2) == LOW) && (Coin2Press == 0)) {
     Keyboard.press('6');
-	delay(ButtonRepeatDelay);
+    delay(ButtonRepeatDelay);
     Serial.println("Coin2");
-	Coin2Press = 1;
+    Coin2Press = 1;
 	}
 	
   if ((digitalRead(Coin2) == HIGH) && (Coin2Press == 1)) {	
     Keyboard.release('6');
-	Coin2Press = 0;
+    Coin2Press = 0;
   }
 
   if ((digitalRead(Player1) == LOW) && (Player1Press == 0)) {
     Keyboard.press('1');
-	delay(ButtonRepeatDelay);
+    delay(ButtonRepeatDelay);
     Serial.println("Player1");
-	Player1Press = 1;
-	}
+    Player1Press = 1;
+  }
 	
   if ((digitalRead(Player1) == HIGH) && (Player1Press == 1)) {
     Keyboard.release('1');
-	Player1Press = 0;
+    Player1Press = 0;
   }
 
   if ((digitalRead(Player2) == LOW) && (Player2Press == 0)) {
     Keyboard.press('2');
-	delay(ButtonRepeatDelay);
+    delay(ButtonRepeatDelay);
     Serial.println("Player2");
-	Player2Press = 1;
-	}
+    Player2Press = 1;
+  }
 	
   if ((digitalRead(Player2) == HIGH) && (Player2Press == 1)) {
     Keyboard.release('2');
-	Player2Press = 0;
+    Player2Press = 0;
   }
 
   if ((digitalRead(Exit) == LOW) && (ExitPress == 0)) {
     Keyboard.press(KEY_ESC);
-	delay(ButtonRepeatDelay);
+    delay(ButtonRepeatDelay);
     Serial.println("Exit");
-	ExitPress = 1;
-	}
+    ExitPress = 1;
+   }
 	
   if ((digitalRead(Exit) == HIGH) && (ExitPress == 1)) {
     Keyboard.release(KEY_ESC);
-	ExitPress = 0;
+    ExitPress = 0;
   }
 
   if ((digitalRead(Pause) == LOW) && (PausePress == 0)) {
     Keyboard.press('P');
-	delay(PauseRepeatDelay);
+    delay(PauseRepeatDelay);
     Serial.println("Pause");
-	PausePress = 1;
-	}
+    PausePress = 1;
+   }
 	
   if ((digitalRead(Pause) == HIGH) && (PausePress == 1)) {
     Keyboard.release('P');
-	PausePress = 0;
+    PausePress = 0;
   }
 
   if ((digitalRead(Select) == LOW) && (SelectPress == 0)) {
     Keyboard.press(KEY_RETURN);
-	delay(ButtonRepeatDelay);
+    delay(ButtonRepeatDelay);
     Serial.println("Pause");
-	SelectPress = 1;
-	}
+    SelectPress = 1;
+   }
 	
   if ((digitalRead(Select) == HIGH) && (SelectPress == 1)) {
     Keyboard.release(KEY_RETURN);
-	SelectPress = 0;
+    SelectPress = 0;
   }
 
 
@@ -201,82 +200,81 @@ void loop() {
   if ((SelectPress == 1) && (digitalRead(Select)) == HIGH) {
     Serial.println("Select");
     Keyboard.release(KEY_RETURN);
-	SelectPress = 0;
+    SelectPress = 0;
   }
 */
 
   if ((digitalRead(Menu) == LOW) && (MenuPress == 0)) {
     Keyboard.press(KEY_TAB);
-	delay(ButtonRepeatDelay);
+    delay(ButtonRepeatDelay);
     Serial.println("Menu");
-	MenuPress = 1;
-	}
+    MenuPress = 1;
+   }
 	
    if ((digitalRead(Menu) == HIGH) && (MenuPress == 1)) {
     Keyboard.release(KEY_TAB);
- 	MenuPress = 0;
+    MenuPress = 0;
   }
 
   if ((digitalRead(Service) == LOW) && (ServicePress == 0)) {
     Keyboard.press(KEY_F2);
-	delay(ButtonRepeatDelay);
+    delay(ButtonRepeatDelay);
     Serial.println("Service");
-	ServicePress = 1;
-	}
+    ServicePress = 1;
+   }
 	
   if ((digitalRead(Service) == HIGH) && (ServicePress == 1)) {
     Keyboard.release(KEY_F2);
-	ServicePress = 0;	
+    ServicePress = 0;	
   }
 
   if ((digitalRead(ServiceCoin) == LOW) && (ServiceCoinPress == 0)) {
     Keyboard.press('9');
-	delay(ButtonRepeatDelay);
+    delay(ButtonRepeatDelay);
     Serial.println("ServiceCoin");
-	ServiceCoinPress = 1;
-	}
+    ServiceCoinPress = 1;
+   }
 	
   if ((digitalRead(ServiceCoin) == HIGH) && (ServiceCoinPress == 1)) {
     Keyboard.release('9');
-	ServiceCoinPress = 0;
+    ServiceCoinPress = 0;
   }
 
   if ((digitalRead(MameVol) == LOW) && (MameVolPress == 0)) {
     Keyboard.press('~');
-	delay(ButtonRepeatDelay);
+    delay(ButtonRepeatDelay);
     Serial.println("MameVol");
-	MameVolPress = 1;
-	}
+    MameVolPress = 1;
+  }
 	
   if ((digitalRead(MameVol) == HIGH) && (MameVolPress == 1)) {
     Keyboard.release('~');
-	MameVolPress = 0;	
+    MameVolPress = 0;	
   }
-  
-  
+    
 
   if ((digitalRead(LeftFlipper) == LOW) && (LeftFlipperPress == 0)) {
     Keyboard.press(KEY_LEFT_SHIFT);
-	delay(ButtonRepeatDelay);
+    delay(ButtonRepeatDelay);
     Serial.println("LeftFlipper");
-	LeftFlipperPress = 1;
-	}
+    LeftFlipperPress = 1;
+  }
 	
   if ((digitalRead(LeftFlipper) == HIGH) && (LeftFlipperPress == 1)) {
     Keyboard.release(KEY_LEFT_SHIFT);
-	LeftFlipperPress = 0;
+    LeftFlipperPress = 0;
   }
 
   if ((digitalRead(RightFlipper) == LOW) && (RightFlipperPress == 0)) {
     Keyboard.press(KEY_RIGHT_SHIFT);
-	delay(ButtonRepeatDelay);
+    delay(ButtonRepeatDelay);
     Serial.println("RightFlipper");
-	RightFlipperPress = 1;
-	}
+    RightFlipperPress = 1;
+   }
 	
   if ((digitalRead(RightFlipper) == HIGH) && (RightFlipperPress == 1)) {
     Keyboard.release(KEY_RIGHT_SHIFT);
-	RightFlipperPress = 0;	
+    RightFlipperPress = 0;	
   }
   
 
@@ -284,27 +282,19 @@ void loop() {
   // OS master volume control.  Tested in Win 10 and 11.
 
   if (!digitalRead(VolUp)) {
-    Consumer.write(MEDIA_VOLUME_UP);  // see HID Project documentation for more
-                                      // Consumer keys  - commented out for
-                                      // Arduino Nano and MAME Volume Keys used
+    Consumer.write(MEDIA_VOLUME_UP);  // see HID Project documentation for more Consumer keys
     delay(300);  // simple debounce
-
     Serial.println("VolUp");
   }
+	
   if (!digitalRead(VolDown)) {
-    Consumer.write(
-        MEDIA_VOLUME_DOWN);  // see HID Project documentation for more Consumer
-                             // keys  - commented out for Arduino Nano and MAME
-                             // Volume Keys used
+    Consumer.write(MEDIA_VOLUME_DOWN);  // see HID Project documentation for more Consumer keys
     delay(ButtonRepeatDelay);
     Serial.println("VolDown");
   }
 
   if (!digitalRead(VolMute)) {
-    Consumer.write(
-        MEDIA_VOLUME_MUTE);  // see HID Project documentation for more Consumer
-                             // keys  - commented out for Arduino Nano and MAME
-                             // Volume Keys used
+    Consumer.write(MEDIA_VOLUME_MUTE);  // see HID Project documentation for more Consumer keys 
     delay(ButtonRepeatDelay);
     Serial.println("VolMute");
   }
