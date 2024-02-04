@@ -49,7 +49,7 @@ Media control<br>
  - System Volume Down to A1<br>
  - System Volum Mute to A2<br>
 
-<BR>Wiring on the DFRobot Leonardo (Dreamer Nano)<BR>
+<BR>Example wiring on the DFRobot Leonardo (Dreamer Nano)<BR>
 ![Wiring Diagram](https://github.com/StudioShemp/MAMEKeys-Mini-MAME-Keyboard/blob/main/images/wiring.jpg)
 
 <BR>
