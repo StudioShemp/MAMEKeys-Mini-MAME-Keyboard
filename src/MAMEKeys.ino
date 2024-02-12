@@ -16,8 +16,8 @@ const int Service = 11;      // F2
 const int ServiceCoin = 12;  // 9
 
 // HID Media keys
-const int VolUp = A0;    // HID System Master Volume Control Up
-const int VolDown = A1;  // HID System Master Volume Control Down
+const int VolDown = A0;  // HID System Master Volume Control Down
+const int VolUp = A1;    // HID System Master Volume Control Up
 const int VolMute = A2;  // HID System Master Volume Mute Toggle
 
 
